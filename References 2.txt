@@ -1,0 +1,4 @@
+[1] [1] Husain, O. (2024, July 2). 23 privacy policy examples (+ free privacy policy template). Data Privacy Compliance Software for Apps, Websites, & SaaS. https://www.enzuzo.com/blog/best-privacy-policy-examples 
+[2] How to - product card. How To Create a Product Card. (n.d.). https://www.w3schools.com/howto/howto_css_product_card.asp 
+[3] Dronca, R. (2024, June 7). How to create a shopping cart UI using CSS & JavaScript. Designmodo. https://designmodo.com/shopping-cart-ui/ 
+[4] MozDevNet. (n.d.-b). Learn to style HTML using CSS - learn web development: MDN. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Learn/CSS 

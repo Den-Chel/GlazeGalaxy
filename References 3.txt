@@ -1,0 +1,5 @@
+
+[1] W3schools.com. How To Create a Mobile Navigation Menu. (n.d.). https://www.w3schools.com/howto/howto_js_mobile_navbar.asp 
+[2] Agrawal, P. (2023, September 15). Mastering email validation in JavaScript: Multiple approaches. Medium. https://piyush132000.medium.com/mastering-email-validation-in-javascript-multiple-approaches-ae718546160b 
+[3] Leaning, B. (2023, September 7). 48 call-to-action examples you can’t help but click. HubSpot Blog. https://blog.hubspot.com/marketing/call-to-action-examples 
+[4] Schäferhoff, N. (2021, August 26). Media queries in Responsive Design: A complete guide (2021). Torque. https://torquemag.io/2021/08/media-queries-guide/ 

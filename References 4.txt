@@ -1,0 +1,6 @@
+
+[1] Jquery - libraries - cdnjs - the #1 free and open source CDN built to make life easier for developers. cdnjs. (n.d.). https://cdnjs.com/libraries/jquery 
+[2] Mark Otto, J. T. (n.d.-c). Introduction. · Bootstrap. https://getbootstrap.com/docs/4.4/getting-started/introduction/ 
+[3] Friedman, V., About The AuthorVitaly Friedman loves beautiful content and doesn’t like to give in easily. When he is not writing, & Author, A. T. (2017, July 5). Designing the perfect date and Time Picker. Smashing Magazine. https://www.smashingmagazine.com/2017/07/designing-perfect-date-time-picker/ 
+[4] Calculate age using JavaScript - javatpoint. www.javatpoint.com. (n.d.). https://www.javatpoint.com/calculate-age-using-javascript 
+[5] openjsf.org, O. F.-. (n.d.-b). Category: Events. Events | jQuery API Documentation. https://api.jquery.com/category/events/ 
