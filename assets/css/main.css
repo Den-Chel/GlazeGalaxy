@@ -1,12 +1,3 @@
-/*
- * Student Name: Denis Chechulin
- * Student ID: 41170583
- * Course: CST8117 - Cross-Platform Web Design
- * Semester: 1
- * Assignment: Online Store – Part 4
- * Date Submitted: 16/08/2024 
- */
-
 html,
 body {
   /* height: 100%; */
@@ -113,94 +104,77 @@ nav ul li a {
   color: white;
 }
 
-/* Hamburger menu  */
-#menuToggle {
-  display: block;
-  position: relative;
-  z-index: 10;
-  -webkit-user-select: none;
-  user-select: none;
+/* Hamburger menu */
+.hamburger-menu {
+  width: 35px;
+  height: 25px;
+  display: none;
+  cursor: pointer;
+  margin-top: 14px;
 }
 
-#menuToggle a {
+.hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: white;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  z-index: 1600;
+}
+
+/* Navigation menu */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  background: #333;
+  color: #fff;
+  transition: right 0.3s ease;
+  z-index: 1400;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-menu ul li {
+  margin: 15px 0;
+}
+
+.nav-menu ul li a {
+  color: #fff;
   text-decoration: none;
-  color: #232323;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover {
-  color: tomato;
+.nav-menu ul li a:hover {
+  color: #ff6600;
 }
 
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
+/* Active styles */
+.hamburger-menu.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
   opacity: 0;
-  z-index: 2;
 }
 
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 6px;
-  position: relative;
-  background: white;
-  border-radius: 3px;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s, background 0.5s, opacity 0.55s ease;
+.hamburger-menu.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(9.5px, -9.5px);
 }
 
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin: -40px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: white;
-  list-style-type: none;
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s;
-}
-
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-#menuToggle input:checked ~ ul {
-  transform: none;
+.nav-menu.active {
+  right: 0;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Low navigation */
@@ -309,7 +283,7 @@ main hgroup h1 {
   color: white;
   width: 100%;
   height: 650px;
-  background-image: url("../images/donutsgalaxy.png");
+  background-image: url("/images/donutsgalaxy.png");
   background-size: cover;
   background-position: center;
 }
@@ -516,12 +490,14 @@ footer p {
 
 /* Styles for mobile screens  */
 @media screen and (max-width: 767px) {
-  .main-nav {
+  .main-nav,
+  .low-nav {
     display: none;
   }
 
-  #menuToggle {
-    display: block;
+  .header {
+    display: flex;
+    align-items: flex-start;
   }
 
   .header {
@@ -599,7 +575,9 @@ footer p {
     flex-direction: column;
   }
   .hamburger-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .cta {
     padding: 15px;
@@ -665,50 +643,3 @@ footer p {
     display: none;
   }
 }
-
-/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* Hamburger menu 
-.hamburger-menu {
-  position: relative;
-  display: none;
-}
-
-.menu-icon {
-  font-size: 1.875rem;
-  cursor: pointer;
-  display: block;
-  padding: 10px;
-  position: absolute;
-  color: white;
-}
-
-.menu {
-  display: none;
-  flex-direction: column;
-  background-color: #8d5bd0;
-  position: absolute;
-  top: 30px;
-  left: -20px;
-  width: 200px;
-  z-index: 300;
-}
-
-.menu a {
-  color: white;
-  padding: 15px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.menu a:hover {
-  background-color: #575757;
-}
-
-#menu-toggle:checked + .menu-icon + .menu {
-  display: flex;
-}
-
-#menu-toggle {
-  display: none;
-} */
-/* ---------------------------------------------------------------------------------------------------------------------------------------- */
