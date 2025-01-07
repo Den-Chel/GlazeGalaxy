@@ -283,7 +283,7 @@ main hgroup h1 {
   color: white;
   width: 100%;
   height: 650px;
-  background-image: url("images/donutsgalaxy.png");
+  background-image: url("/images/donutsgalaxy.png");
   background-size: cover;
   background-position: center;
 }
