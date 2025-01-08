@@ -286,6 +286,7 @@ main hgroup h1 {
   background-image: url("/images/anastasiia-chepinska-free.jpg");
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 
 .main-banner::after {
@@ -296,7 +297,7 @@ main hgroup h1 {
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  z-index: 0;
 }
 
 .banner-text {
