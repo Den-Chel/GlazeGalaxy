@@ -279,6 +279,12 @@ label {
     margin-right: 0;
     margin-left: 0;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 /* Styles for medium mobile screens  */
@@ -297,6 +303,12 @@ label {
   .card img {
     width: 100%;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 /* Styles for landscape orientation on mobile screens + */
@@ -314,5 +326,11 @@ label {
 
   .card img {
     width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
